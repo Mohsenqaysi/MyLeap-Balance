@@ -12,6 +12,7 @@
 		FC56BDC02169313E00DF804D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC56BDBE2169313E00DF804D /* Main.storyboard */; };
 		FC56BDC22169314000DF804D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC56BDC12169314000DF804D /* Assets.xcassets */; };
 		FC56BDC52169314000DF804D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC56BDC32169314000DF804D /* LaunchScreen.storyboard */; };
+		FC6BC963216E286600692D45 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6BC962216E286600692D45 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FC56BDC12169314000DF804D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC56BDC42169314000DF804D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC56BDC62169314000DF804D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC6BC962216E286600692D45 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,22 @@
 			isa = PBXGroup;
 			children = (
 				FC56BDBA2169313E00DF804D /* AppDelegate.swift */,
-				FC56BDBC2169313E00DF804D /* ViewController.swift */,
+				FC6BC964216E286F00692D45 /* Controllers */,
 				FC56BDBE2169313E00DF804D /* Main.storyboard */,
 				FC56BDC12169314000DF804D /* Assets.xcassets */,
 				FC56BDC32169314000DF804D /* LaunchScreen.storyboard */,
 				FC56BDC62169314000DF804D /* Info.plist */,
 			);
 			path = "MyLeap Balance";
+			sourceTree = "<group>";
+		};
+		FC6BC964216E286F00692D45 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC56BDBC2169313E00DF804D /* ViewController.swift */,
+				FC6BC962216E286600692D45 /* LoginViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC6BC963216E286600692D45 /* LoginViewController.swift in Sources */,
 				FC56BDBD2169313E00DF804D /* ViewController.swift in Sources */,
 				FC56BDBB2169313E00DF804D /* AppDelegate.swift in Sources */,
 			);
@@ -283,13 +295,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K6Q9LJED8Q;
+				DEVELOPMENT_TEAM = 2YP97L48F7;
 				INFOPLIST_FILE = "MyLeap Balance/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Mohsen-Qaysi.MyLeap-Balance.MyLeap-Balance";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Mohsen-Qaysi.MyLeap-Balance";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -301,13 +313,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K6Q9LJED8Q;
+				DEVELOPMENT_TEAM = 2YP97L48F7;
 				INFOPLIST_FILE = "MyLeap Balance/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Mohsen-Qaysi.MyLeap-Balance.MyLeap-Balance";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Mohsen-Qaysi.MyLeap-Balance";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
