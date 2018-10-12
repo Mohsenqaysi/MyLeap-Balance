@@ -13,6 +13,7 @@
 		FC56BDC22169314000DF804D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC56BDC12169314000DF804D /* Assets.xcassets */; };
 		FC56BDC52169314000DF804D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC56BDC32169314000DF804D /* LaunchScreen.storyboard */; };
 		FC6BC963216E286600692D45 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6BC962216E286600692D45 /* LoginViewController.swift */; };
+		FC6BC967216E44B100692D45 /* CardInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6BC966216E44B100692D45 /* CardInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FC56BDC42169314000DF804D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC56BDC62169314000DF804D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC6BC962216E286600692D45 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FC6BC966216E44B100692D45 /* CardInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,10 +71,19 @@
 		FC6BC964216E286F00692D45 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FC6BC965216E449F00692D45 /* Card Info */,
 				FC56BDBC2169313E00DF804D /* ViewController.swift */,
 				FC6BC962216E286600692D45 /* LoginViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FC6BC965216E449F00692D45 /* Card Info */ = {
+			isa = PBXGroup;
+			children = (
+				FC6BC966216E44B100692D45 /* CardInfoViewController.swift */,
+			);
+			path = "Card Info";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC6BC967216E44B100692D45 /* CardInfoViewController.swift in Sources */,
 				FC6BC963216E286600692D45 /* LoginViewController.swift in Sources */,
 				FC56BDBD2169313E00DF804D /* ViewController.swift in Sources */,
 				FC56BDBB2169313E00DF804D /* AppDelegate.swift in Sources */,
