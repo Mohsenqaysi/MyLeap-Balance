@@ -9,16 +9,7 @@
 import UIKit
 
 class CardInfoViewController: UIViewController {
-    /*
-     self.autoTopup = autoTopup
-     self.cardNumber = cardNumber
-     self.cardStatus = cardStatus
-     self.cardType = cardType
-     self.creditStatus = creditStatus
-     self.expiryDate = expiryDate
-     self.issueDate = issueDate
-     self.travelBalance = travelBalance
-     */
+
     @IBOutlet weak var autoTopup: UILabel!
     @IBOutlet weak var cardNumber: UILabel!
     @IBOutlet weak var cardStatus: UILabel!

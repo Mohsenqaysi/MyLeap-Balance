@@ -12,6 +12,7 @@ struct Identifiers {
     static let CardInfoViewControllerSegue = "CardInfoViewControllerSegue"
     static let ViewControllerSegue = "ViewControllerSegue"
     static let cardInfoUserDefults = "cardInfoUserDefults"
+    static let cellID = "cellID"
 }
 
 struct CardInfo: Decodable {
@@ -75,6 +76,7 @@ class LoginViewController: UIViewController {
             if let nextViewController = segue.destination as? ViewController {
                 print("destination: \(nextViewController)")
                 nextViewController.viewControllerfullCardInfo = cardinfo
+                nextViewController.userName = userNmaeField.text!
             }
         }
     }
@@ -128,6 +130,12 @@ class LoginViewController: UIViewController {
         let fullURL = String("\(url)/\(userName)/\(passWord)")
         // https://leap-card-api.herokuapp.com/login/<userName>/<passWord>
         fecthJSON(fullURL: fullURL)
+    }
+    
+    
+    @IBAction func resetPassword(_ sender: UIButton) {
+        let url = URL(string: "https://www.leapcard.ie/en/OnlineAccounts/CaptureUserNameForgetPassword.aspx")!
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
 }
 

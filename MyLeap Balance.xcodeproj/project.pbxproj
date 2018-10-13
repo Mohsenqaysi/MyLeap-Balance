@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC19653A21716FDD008291B5 /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC19653921716FDD008291B5 /* TripTableViewCell.swift */; };
 		FC56BDBB2169313E00DF804D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC56BDBA2169313E00DF804D /* AppDelegate.swift */; };
 		FC56BDBD2169313E00DF804D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC56BDBC2169313E00DF804D /* ViewController.swift */; };
 		FC56BDC02169313E00DF804D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC56BDBE2169313E00DF804D /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC19653921716FDD008291B5 /* TripTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
 		FC56BDB72169313E00DF804D /* MyLeap Balance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyLeap Balance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC56BDBA2169313E00DF804D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC56BDBC2169313E00DF804D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC19653821716F8D008291B5 /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				FC19653921716FDD008291B5 /* TripTableViewCell.swift */,
+			);
+			path = Trip;
+			sourceTree = "<group>";
+		};
 		FC56BDAE2169313E00DF804D = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +91,7 @@
 		FC6BC965216E449F00692D45 /* Card Info */ = {
 			isa = PBXGroup;
 			children = (
+				FC19653821716F8D008291B5 /* Trip */,
 				FC6BC966216E44B100692D45 /* CardInfoViewController.swift */,
 			);
 			path = "Card Info";
@@ -161,6 +172,7 @@
 				FC6BC963216E286600692D45 /* LoginViewController.swift in Sources */,
 				FC56BDBD2169313E00DF804D /* ViewController.swift in Sources */,
 				FC56BDBB2169313E00DF804D /* AppDelegate.swift in Sources */,
+				FC19653A21716FDD008291B5 /* TripTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
