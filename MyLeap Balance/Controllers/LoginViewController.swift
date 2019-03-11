@@ -90,6 +90,18 @@ class LoginViewController: UIViewController {
         //        loginButton.alpha = 0.5
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        // Show the Navigation Bar
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        // Hide the Navigation Bar
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
     func fecthJSON(fullURL: String) {
         guard let urlString = URL(string: fullURL) else {return}
         URLSession.shared.dataTask(with: urlString) { (jsonData, resp, error) in

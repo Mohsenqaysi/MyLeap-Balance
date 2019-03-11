@@ -40,6 +40,16 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func logout(_ sender: UIBarButtonItem) {
+        let alertSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        alertSheet.addAction(UIAlertAction(title: "Log out", style: .destructive, handler: { (_) in
+            self.navigationController?.popViewController(animated: true)
+        }))
+        
+        alertSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        present(alertSheet, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: true)
